@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color : #609986;
+}
+
+h1, h2 {
+    color:  #f5d452;
+}
+
+.page-header {
+    /*border: 1px solid red;*/
+    padding: 15px;
+}
+
+/*
+#canvas-compare {
+  border: 1px solid black;
+}
+*/
+
+#btn1{
+    height: 1,1em;
+    width: 10em;
+    font-size: 1.5em;
+    text-align: center;
+    color: #f5d452;
+    background-color:  #31455d; /*#4281a4;*/
+}
+
+/*
+svg {
+  border: 1px solid orange;
+}
+*/
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 0.8rem sans-serif;
+  text-anchor: end;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+}
