@@ -117,11 +117,12 @@ function drawBars(state1, state2, result){
       .attr('height', barHeight-2);
   
   bar.append('text')
-    .attr('x', 210)
+    .attr('x', function(d){ return d.barLength+250;})
     .attr('y', barHeight / 2)
     .attr('dy', '0.35rem')
-    .text(function(d){ return ' Census ' + d.year + ' ' + d.stateName +' Pop: ' + d.populationM + 'M'})    
-}  
+    .attr('text-anchor', 'middle')
+    .text(function(d){ return ' Census ' + d.year + ' ' + d.stateName +', Pop: ' + d.populationM + 'M';})    
+  }    
 
 $(function(){
  	console.log('ready');
